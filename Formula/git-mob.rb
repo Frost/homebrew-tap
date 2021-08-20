@@ -1,8 +1,8 @@
 class GitMob < Formula
   desc "CLI tool for social coding"
   homepage "https://github.com/Frost/git-mob"
-  url "https://github.com/Frost/git-mob/releases/download/v0.3.4/git-mob-0.3.4-macos.zip"
-  sha256 "2d0c9f51990c69e000310d37754592ad0a240d82b12ce78cd48898a89a477479"
+  url "https://github.com/Frost/git-mob/releases/download/v0.3.5/git-mob-0.3.5-macos.zip"
+  sha256 "884cee1574e4e5fbc841aa955f03a938dcff26f188639956913447aa64042c5b"
   license "MIT"
 
   bottle do
