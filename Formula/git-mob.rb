@@ -6,8 +6,8 @@ class GitMob < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Frost/homebrew-tap/releases/download/git-mob-0.3.4"
-    sha256 cellar: :any_skip_relocation, catalina: "0df6ae76f594b8f5b67f518782cb4cc72ace4001c6edc3df4bb79ab1f37fe08a"
+    root_url "https://github.com/Frost/homebrew-tap/releases/download/git-mob-0.3.5"
+    sha256 cellar: :any_skip_relocation, catalina: "89add6ebee7e0e1ee78ad7bef9ac523c9ae66d58f7658c4c308f912c000314bb"
   end
 
   def install
