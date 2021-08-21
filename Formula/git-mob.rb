@@ -1,13 +1,16 @@
 class GitMob < Formula
   desc "CLI tool for social coding"
   homepage "https://github.com/Frost/git-mob"
-  url "https://github.com/Frost/git-mob/releases/download/v0.3.5/git-mob-0.3.5-macos.zip"
-  sha256 "884cee1574e4e5fbc841aa955f03a938dcff26f188639956913447aa64042c5b"
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/Frost/homebrew-tap/releases/download/git-mob-0.3.5"
-    sha256 cellar: :any_skip_relocation, catalina: "89add6ebee7e0e1ee78ad7bef9ac523c9ae66d58f7658c4c308f912c000314bb"
+  on_macos do
+    url "https://github.com/Frost/git-mob/releases/download/v0.3.5/git-mob-0.3.5-macos.zip"
+    sha256 "884cee1574e4e5fbc841aa955f03a938dcff26f188639956913447aa64042c5b"
+  end
+
+  on_linux do
+    url "https://github.com/Frost/git-mob/releases/download/v0.3.5/git-mob-0.3.5-ubuntu.zip"
+    sha256 "b234ff8c673697f141b9456b823f33c9a37984c83d07a735e1e9c4c7a5f0d602"
   end
 
   def install
