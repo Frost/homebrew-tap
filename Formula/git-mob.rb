@@ -9,6 +9,7 @@ class GitMob < Formula
   elsif OS.linux?
     url "https://github.com/Frost/git-mob/releases/download/v0.3.5/git-mob-0.3.5-ubuntu.zip"
     sha256 "b234ff8c673697f141b9456b823f33c9a37984c83d07a735e1e9c4c7a5f0d602"
+    depends_on formula: "zlib"
   end
 
   def install
