@@ -16,6 +16,7 @@ class GitMob < Formula
   def install
     bin.install "git-add-coauthor"
     bin.install "git-edit-coauthor"
+    bin.install "git-delete-coauthor"
     bin.install "git-mob"
     bin.install "git-solo"
   end
