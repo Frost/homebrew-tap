@@ -1,8 +1,8 @@
 class GitMob < Formula
   desc "CLI tool for social coding"
   homepage "https://github.com/Frost/git-mob"
-  url "https://github.com/Frost/git-mob/releases/download/v0.3.5/git-mob-0.3.5-macos.zip"
-  sha256 "884cee1574e4e5fbc841aa955f03a938dcff26f188639956913447aa64042c5b"
+  url "https://github.com/Frost/git-mob/releases/download/v0.4.0/git-mob-0.4.0-macos.zip"
+  sha256 "9a4f3ac7c60b853559c6e92010ca4e0c5f74c1ebae49cfdcfcb49ba88466f9e3"
   license "MIT"
 
   bottle do
@@ -11,11 +11,18 @@ class GitMob < Formula
   end
 
   def install
-    bin.install "git-add-coauthor"
-    bin.install "git-delete-coauthor"
-    bin.install "git-edit-coauthor"
-    bin.install "git-mob"
-    bin.install "git-solo"
+    %w[
+      git-add-coauthor
+      git-edit-coauthor
+      git-delete-coauthor
+      git-mob
+      git-solo
+    ].each do |binary|
+      bin.install "release/#{binary}" => binary
+
+      manpage = "#{binary}.1.gz"
+      man1.install "man/#{manpage}" => manpage
+    end
   end
 
   test do
